@@ -1,0 +1,43 @@
+{
+  "name": "dsh-wide-session-drag",
+  "version": "0.1.0",
+  "description": "DSH 桌面端宽域跨会话拖拽引用：把左侧会话拖过侧边栏分界线，在右侧任意区域松开即可插入 @[会话标题](dsh-session:id)。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qq625424994-svg/dsh-wide-session-drag.git"
+  },
+  "homepage": "https://github.com/qq625424994-svg/dsh-wide-session-drag",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "session",
+    "drag-and-drop",
+    "mention",
+    "desktop"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  }
+}
